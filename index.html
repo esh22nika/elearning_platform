@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform | Your Gateway to Knowledge</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* light gray background */
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card {
+            background-color: #ffffff;
+        }
+        .feature-icon {
+            background: #e0e7ff;
+            color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">
+                <i class="fas fa-graduation-cap mr-2"></i>E-Learning Platform
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#courses" class="text-gray-600 hover:text-indigo-600 transition duration-300">Courses</a>
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 transition duration-300">Why Us</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 transition duration-300">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <a href="#" class="hidden md:block bg-indigo-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-indigo-700 cta-button">Get Started</a>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#courses" class="block py-2 text-gray-600 hover:text-indigo-600">Courses</a>
+            <a href="#features" class="block py-2 text-gray-600 hover:text-indigo-600">Why Us</a>
+            <a href="#testimonials" class="block py-2 text-gray-600 hover:text-indigo-600">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+            <a href="#" class="block mt-2 bg-indigo-600 text-white text-center font-semibold px-5 py-2 rounded-lg hover:bg-indigo-700">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white pt-32 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Unlock Your Potential. Start Learning Today.</h1>
+                <p class="text-lg md:text-xl text-indigo-200 max-w-3xl mx-auto mb-8">
+                    Explore thousands of courses from top instructors to advance your career and personal growth.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#courses" class="bg-white text-indigo-600 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 cta-button">Browse Courses</a>
+                    <a href="#" class="bg-indigo-500 text-white font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-indigo-600 cta-button">Become an Instructor</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Promotion Banner -->
+        <section class="bg-yellow-300 text-yellow-900">
+            <div class="container mx-auto px-6 py-4 text-center">
+                <p class="font-semibold">
+                    <i class="fas fa-bolt mr-2"></i>
+                    <span class="font-bold">Summer Sale!</span> Get up to <span class="font-extrabold">50% OFF</span> on all annual plans. Offer ends soon!
+                    <a href="#" class="ml-2 underline font-bold">Claim Offer</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Course Offerings Section -->
+        <section id="courses" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our Most Popular Courses</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Handpicked courses by our experts to help you get started on your learning journey.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Course Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                        <img src="https://placehold.co/600x400/764ba2/ffffff?text=Web+Dev" alt="Web Development Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">The Complete Web Development Bootcamp</h3>
+                            <p class="text-gray-600 mb-4">Learn HTML, CSS, Javascript, Node, and everything you need to become a full-stack developer.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-indigo-600 font-bold text-lg">$19.99 <s class="text-gray-500 text-sm">$99.99</s></span>
+                                <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                        <img src="https://placehold.co/600x400/667eea/ffffff?text=Data+Science" alt="Data Science Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Data Science & Machine Learning A-Z™</h3>
+                            <p class="text-gray-600 mb-4">Master Data Science and Machine Learning concepts using Python, Pandas, and Scikit-learn.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-indigo-600 font-bold text-lg">$24.99 <s class="text-gray-500 text-sm">$129.99</s></span>
+                                <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden course-card">
+                        <img src="https://placehold.co/600x400/4facfe/ffffff?text=UI/UX+Design" alt="UI/UX Design Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Ultimate UI/UX Design Masterclass</h3>
+                            <p class="text-gray-600 mb-4">Go from beginner to expert in Figma, creating beautiful and user-friendly interfaces.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-indigo-600 font-bold text-lg">$15.99 <s class="text-gray-500 text-sm">$79.99</s></span>
+                                <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Why Our Platform?</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">We provide the best learning experience with unique features that set us apart.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <!-- Feature 1 -->
+                    <div>
+                        <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center feature-icon">
+                            <i class="fas fa-user-tie text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Expert Instructors</h3>
+                        <p class="text-gray-600">Learn from industry experts who are passionate about teaching and bring real-world experience.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div>
+                        <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center feature-icon">
+                            <i class="fas fa-clock text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Flexible Learning</h3>
+                        <p class="text-gray-600">Learn at your own pace with lifetime access to courses on mobile and desktop.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div>
+                        <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center feature-icon">
+                            <i class="fas fa-certificate text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Certificate of Completion</h3>
+                        <p class="text-gray-600">Earn a certificate upon completing a course to showcase your new skills to employers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-indigo-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">What Our Students Say</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Thousands of students have found success with our platform. Here are a few of their stories.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card p-8 rounded-lg shadow-md">
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"The web development course was fantastic! The instructor explained complex topics clearly, and I was able to build my own website from scratch. Highly recommended!"</p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Student photo" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Sarah Johnson</h4>
+                                <p class="text-sm text-gray-500">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card p-8 rounded-lg shadow-md">
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"As a complete beginner in data science, this platform made it easy for me to get started. The hands-on projects were incredibly helpful in solidifying my understanding."</p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/150?img=2" alt="Student photo" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Michael Chen</h4>
+                                <p class="text-sm text-gray-500">Data Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card p-8 rounded-lg shadow-md">
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"I took the UI/UX course to switch careers, and it was the best decision I made. The content is up-to-date, and I now have a strong portfolio that helped me land a new job."</p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/150?img=3" alt="Student photo" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Emily Rodriguez</h4>
+                                <p class="text-sm text-gray-500">UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">E-Learning Platform</h3>
+                    <p class="text-gray-400">Your partner in lifelong learning and professional development.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#courses" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i> support@e-learning.com</p>
+                    <p class="text-gray-400"><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest courses and offers.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" class="w-full p-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-indigo-500">
+                        <button type="submit" class="w-full mt-2 bg-indigo-600 text-white font-semibold py-2 rounded-lg hover:bg-indigo-700">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 E-Learning Platform. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
+
